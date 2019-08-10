@@ -1,0 +1,19 @@
+.questionClass {
+    font-weight: bold;
+    color: black;
+    font-size: larger
+  }
+
+  .optionClass {
+    font-family: 'Courier New', Courier, monospace
+  }
+
+  table tr.selected {
+    background-color: #4CAF50 !important;
+    color: #ffffff;
+}
+
+table tr.highlight {
+  background-color: #eeeeee !important;
+  color: black;
+}

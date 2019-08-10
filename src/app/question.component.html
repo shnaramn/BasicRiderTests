@@ -1,0 +1,21 @@
+<div style="text-align: left; width: 800px; align-self: centre; margin: 0 auto;">
+  <table class="table-hover">
+    <tr>
+      <div class='questionClass'>
+        {{questionModel.question}}
+      </div>
+    </tr>
+
+    <tr *ngFor='let optionAnswer of questionModel.options' 
+      (click)="answerSelected(optionAnswer)"
+      (mouseover)="highlightAnswer(optionAnswer)"
+      (mouseleave)="clearHighlightAnswer(optionAnswer)"
+      [ngClass] = "[optionAnswer == selectedAnswer ? 'selected' : '', optionAnswer == highlightedAnswer ? 'highlight' : '']">
+      <div>
+        <td>
+          {{optionAnswer}}
+        </td>
+      </div>
+    </tr>
+  </table>
+</div>
