@@ -4,6 +4,7 @@ export class QuestionModel {
     public question: string = 'Do you want to learn to ride a bike?',
     public answer: string = 'Yes',
     public options: string[] = ['Yes', 'No', 'May be'],
-    public explanation: string = 'Obviously!') {
+    public explanation: string = 'Obviously!',
+    public usersAnswer: string = '') {
   }
 }

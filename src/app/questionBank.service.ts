@@ -16,14 +16,57 @@ export class QuestionBankService {
           'Slow, Lean, Power, Ride',
           'See, Lean, Push, Race'
         ],
-        explanation: ''
+        explanation: '',
+        usersAnswer: ''
       },
       {
         id: 2,
         question: 'What is your favorite bike?',
         answer: 'Kawasaki',
-        options: ['Kawasaki', 'Yamaha', 'Honda'],
-        explanation: ''
+        options: [
+          'Kawasaki',
+          'Yamaha',
+          'Honda'
+        ],
+        explanation: '',
+        usersAnswer: ''
+      }
+      ,
+      {
+        id: 3,
+        question: 'What is your most important role in reducing risk?',
+        answer: 'Time + Space + SEE',
+        options: [
+          'Time + Space + SEE',
+          'Dont ride a bike.',
+          'Buy insurance.'
+        ],
+        explanation: '',
+        usersAnswer: ''
+      },
+      {
+        id: 4,
+        question: 'What is the friction zone?',
+        answer: 'Some zone',
+        options: [
+          'Some zone',
+          'Dont know',
+          'Ice cream'
+        ],
+        explanation: '',
+        usersAnswer: ''
+      },
+      {
+        id: 5,
+        question: 'What are escape routes?',
+        answer: 'Routes for escaping',
+        options: [
+          'Routes for escaping',
+          'A movie',
+          'Ice cream'
+        ],
+        explanation: '',
+        usersAnswer: ''
       }
     ];
 

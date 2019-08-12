@@ -1,16 +1,26 @@
 .questionClass {
-    font-weight: bold;
-    color: black;
-    font-size: larger
-  }
+  font-weight: bold;
+  color: black;
+  font-size: larger
+}
 
-  .optionClass {
-    font-family: 'Courier New', Courier, monospace
-  }
+.optionClass {
+  font-family: 'Courier New', Courier, monospace
+}
 
-  table tr.selected {
-    background-color: #4CAF50 !important;
-    color: #ffffff;
+table tr.correctAnswer {
+  background-color: #4CAF50 !important;
+  color: #ffffff;
+}
+
+table tr.wrongAnswer {
+  background-color: rgb(219, 86, 33) !important;
+  color: #ffffff;
+}
+
+table tr.selectedAnswer {
+  background-color: rgb(86, 209, 247) !important;
+  color: #ffffff;
 }
 
 table tr.highlight {

@@ -1,6 +1,6 @@
 import { Component, ViewChild, ChangeDetectorRef } from '@angular/core';
-import { Question } from './question.component';
 import { QuestionBankService } from './questionBank.service';
+import { QuestionModel } from './questionModel.component';
 
 @Component({
   selector: 'QuestionBoard',
@@ -10,25 +10,27 @@ import { QuestionBankService } from './questionBank.service';
 
 export class QuestionBoard {
   result: string
-  isCurrentQuestionAnswered: boolean = false;
   totalQuestionsAnswered: number = 0;
   countOfCorrectAnswers: number = 0;
   questionBankService: QuestionBankService;
+  questionsAsked: QuestionModel[];
+  currentQuestionNumber: number = -1;
+  currentQuestion: QuestionModel;
 
-  @ViewChild('liveQuestion', { static: false }) currentQuestion: Question;
+  readonly maxNumberOfQuestions: number = 5;
 
-  constructor(private cdRef: ChangeDetectorRef) {
+  constructor() {
     this.result = 'Waiting for answer...';
     this.questionBankService = new QuestionBankService();
+    this.questionsAsked = new Array<QuestionModel>(5);
+    this.getNextQuestion();
   }
 
-  ngAfterViewInit() {
-    this.getNextQuestion();
-    this.cdRef.detectChanges();
+  isCurrentQuestionAnswered(): boolean {
+    return this.questionsAsked[this.currentQuestionNumber].usersAnswer != ''
   }
 
   answerChanged(isCorrectAnswer: boolean) {
-    this.isCurrentQuestionAnswered = true;
     ++this.totalQuestionsAnswered;
 
     if (isCorrectAnswer) {
@@ -49,8 +51,23 @@ export class QuestionBoard {
   }
 
   getNextQuestion() {
-    const nextQuestionModel = this.questionBankService.getQuestionById(this.totalQuestionsAnswered);
-    this.isCurrentQuestionAnswered = false;
-    this.currentQuestion.refresh(nextQuestionModel);
+    if (this.currentQuestionNumber >= (this.maxNumberOfQuestions - 1)) {
+      return;
+    }
+
+    if (this.questionsAsked[this.currentQuestionNumber + 1] == null) {
+      const newQuestionModel = this.questionBankService.getQuestionById(this.currentQuestionNumber + 1);
+      this.questionsAsked[this.currentQuestionNumber + 1] = newQuestionModel;
+    }
+
+    this.currentQuestion = this.questionsAsked[++this.currentQuestionNumber];
+  }
+
+  goToPreviousQuestion() {
+    if (this.currentQuestionNumber <= 0) {
+      return;
+    }
+
+    this.currentQuestion = this.questionsAsked[--this.currentQuestionNumber];
   }
 }

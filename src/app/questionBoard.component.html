@@ -5,7 +5,10 @@
   <div>
     Score so far: {{getScoreSoFar() | number: '1.2-2'}}
   </div>
-  <Question #liveQuestion (onAnswerChanged)="answerChanged($event)"></Question>
+  <div>
+   Question Number: {{currentQuestionNumber}}
+  </div>
+  <Question #liveQuestion (onAnswerChanged)="answerChanged($event)" [questionModel]='currentQuestion'></Question>
   <br />
   <div style="text-align: left; width: 800px; align-self: centre; margin: 0 auto;border-top: 10px">
     {{result}}
@@ -14,8 +17,8 @@
   <div style="text-align: left; width: 720px; align-self: centre; margin: 0 auto;">
     <table>
       <tr>
-        <td> <button type="button"> Back </button> </td>
-        <td> <button [disabled]="!isCurrentQuestionAnswered" (click)="getNextQuestion()"> Next </button> </td>
+        <td> <button (click)="goToPreviousQuestion()"> Back </button> </td>
+        <td> <button [disabled]="!isCurrentQuestionAnswered()" (click)="getNextQuestion()"> Next </button> </td>
       </tr>
     </table>
   </div>

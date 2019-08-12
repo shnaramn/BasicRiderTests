@@ -8,31 +8,13 @@ import { QuestionModel } from './questionModel.component';
   styleUrls: ['./question.component.css']
 })
 export class Question {
-  private isActive: boolean = true;
-
-  questionModel: QuestionModel
-  selectedAnswer: any;
   highlightedAnswer: any;
 
+  @Input() questionModel: QuestionModel
   @Output() onAnswerChanged = new EventEmitter<boolean>();
-  @Input() newQuestion: string;
 
   highlightAnswer(chosenAnswer: any) {
-    if (!this.isActive) {
-      return;
-    }
-
     this.highlightedAnswer = chosenAnswer;
-  }
-
-  refresh(nextQuestionModel: QuestionModel) {
-    this.isActive = true;
-    this.selectedAnswer = '';
-    this.highlightedAnswer = '';
-    this.questionModel.question = nextQuestionModel.question;
-    this.questionModel.answer = nextQuestionModel.answer;
-    this.questionModel.options = nextQuestionModel.options;
-    this.randomizeAnswers();
   }
 
   clearHighlightAnswer(chosenAnswer: any) {
@@ -65,12 +47,7 @@ export class Question {
   }
 
   answerSelected(chosenAnswer: string) {
-    if (!this.isActive) {
-      return;
-    }
-
     this.onAnswerChanged.emit(chosenAnswer === this.questionModel.answer);
-    this.selectedAnswer = chosenAnswer;
-    this.isActive = false;
+    this.questionModel.usersAnswer = chosenAnswer;
   }
 }
