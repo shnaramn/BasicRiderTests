@@ -1,5 +1,12 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
+<div class='rootDiv'>
+
+  <!-- This adds a padding at the top. If we remove this and remove the style
+  for h1, there will be padding in the top and the html background color fills
+  it space. This is ugly. Instead, remove all default padding from the top of
+  the page and add an empty white slot for spacing. -->
+  <div class='paddingDiv'> </div>
+
   <h1>
     {{ title }}
   </h1>
@@ -7,18 +14,20 @@
   <div *ngIf='!termsAgreed'>
     <h3>TERMS OF AGREEMENT</h3>
 
-    <div style="text-align: left; width: 800px; align-self: centre; margin: 0 auto;">
+    <div class='instructionsDiv'>
       <li> <b> THIS IS NOT AN OFFICIAL TEST. CLEARING THIS TEST DOESN'T GIVE YOU ANY ENDORSEMENTS.</b> </li>
       <li> <b> THIS IS FOR PRACTICE AND PRACTICE ONLY! </b></li>
       <li> There are no limits. Try as many times as you want. </li>
     </div>
 
-    <button (click)="clickEvent()">Start the test!</button>
+    <div class='termsAgreedButtonDiv'>
+      <button class='termsAgreedButton' (click)='clickEvent()'>Start the test!</button>
+    </div>
   </div>
-</div>
 
-<div *ngIf='termsAgreed'>
-  <QuestionBoard></QuestionBoard>
-</div>
+  <div *ngIf='termsAgreed'>
+    <QuestionBoard></QuestionBoard>
+  </div>
 
-<router-outlet></router-outlet>
+  <router-outlet></router-outlet>
+</div>

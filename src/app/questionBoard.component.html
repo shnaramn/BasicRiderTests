@@ -6,9 +6,9 @@
     Score so far: {{getScoreSoFar() | number: '1.2-2'}}
   </div>
   <div>
-   Question Number: {{currentQuestionNumber}}
+    Question Number: {{currentQuestionNumber}}
   </div>
-  <Question #liveQuestion (onAnswerChanged)="answerChanged($event)" [questionModel]='currentQuestion'></Question>
+  <Question (onAnswerChanged)="answerChanged($event)" [questionModel]='currentQuestion'></Question>
   <br />
   <div style="text-align: left; width: 800px; align-self: centre; margin: 0 auto;border-top: 10px">
     {{result}}
@@ -19,6 +19,18 @@
       <tr>
         <td> <button (click)="goToPreviousQuestion()"> Back </button> </td>
         <td> <button [disabled]="!isCurrentQuestionAnswered()" (click)="getNextQuestion()"> Next </button> </td>
+      </tr>
+    </table>
+  </div>
+  <br />
+  <div *ngIf='showAnswers'>
+    <table>
+      <tr *ngFor='let question1 of questionsAsked'>
+        <td>
+          <div>
+            <Question [questionModel]='question1'></Question>
+          </div>
+        </td>
       </tr>
     </table>
   </div>

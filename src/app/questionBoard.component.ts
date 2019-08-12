@@ -16,7 +16,7 @@ export class QuestionBoard {
   questionsAsked: QuestionModel[];
   currentQuestionNumber: number = -1;
   currentQuestion: QuestionModel;
-
+  showAnswers:boolean = false;
   readonly maxNumberOfQuestions: number = 5;
 
   constructor() {
@@ -52,6 +52,7 @@ export class QuestionBoard {
 
   getNextQuestion() {
     if (this.currentQuestionNumber >= (this.maxNumberOfQuestions - 1)) {
+      this.showAnswers = true;
       return;
     }
 

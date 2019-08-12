@@ -4,10 +4,6 @@
   font-size: larger
 }
 
-.optionClass {
-  font-family: 'Courier New', Courier, monospace
-}
-
 table tr.correctAnswer {
   background-color: #4CAF50 !important;
   color: #ffffff;

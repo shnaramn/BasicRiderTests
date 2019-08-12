@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+html {
+  background-color: rgb(240, 240, 240); 
+}
+
+body {
+  /* Without this, there is a gap in the top of the page. */
+  margin-top: 0;
+}
+
+h1 {
+  /* Without this, there is a gap in the top of the page. */
+  margin-top: 0;
+}

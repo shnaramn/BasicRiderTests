@@ -1,0 +1,31 @@
+.rootDiv {
+  text-align: left;
+  width: 816px;
+  align-self: center;
+  margin: 0 auto;
+  text-align:center;
+  background: white;
+  height: 100%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.paddingDiv {
+  height: 20px;
+}
+
+.instructionsDiv {
+  text-align: left;
+  width: 800px;
+  align-self: centre;
+  margin: 0 auto;
+}
+
+.termsAgreedButtonDiv {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.termsAgreedButton {
+  height: 40px;
+  font-size: large;
+}
