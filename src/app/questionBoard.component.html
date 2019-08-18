@@ -25,10 +25,10 @@
   <br />
   <div *ngIf='showAnswers'>
     <table>
-      <tr *ngFor='let question1 of questionsAsked'>
+      <tr *ngFor='let currentQuestion of questionsAsked'>
         <td>
           <div>
-            <Question [questionModel]='question1'></Question>
+            <Question [questionModel]='currentQuestion' [shouldShowExplanation]=true [isEnabled]=false></Question>
           </div>
         </td>
       </tr>

@@ -9,15 +9,24 @@ import { QuestionModel } from './questionModel.component';
 })
 export class Question {
   highlightedAnswer: any;
-
+  @Input() isEnabled: boolean = true;
+  @Input() shouldShowExplanation: boolean = false;
   @Input() questionModel: QuestionModel
   @Output() onAnswerChanged = new EventEmitter<boolean>();
 
   highlightAnswer(chosenAnswer: any) {
+    if (!this.isEnabled) {
+      return;
+    }
+
     this.highlightedAnswer = chosenAnswer;
   }
 
   clearHighlightAnswer(chosenAnswer: any) {
+    if (!this.isEnabled) {
+      return;
+    }
+
     if (this.highlightedAnswer == chosenAnswer) {
       this.highlightedAnswer = '';
     }
@@ -25,28 +34,13 @@ export class Question {
 
   constructor() {
     this.questionModel = new QuestionModel();
-    this.randomizeAnswers();
-  }
-
-  private randomizeAnswers(): void {
-    const numberOfOptions = this.questionModel.options.length - 1;
-
-    for (let i = 0; i < 10; ++i) {
-      let startIndex = Helper.getRandomIntFromInterval(0, numberOfOptions);
-      let endIndex = Helper.getRandomIntFromInterval(0, numberOfOptions);
-
-      while (startIndex == endIndex) {
-        endIndex = Helper.getRandomIntFromInterval(0, numberOfOptions);
-      }
-
-      // Swap
-      const temp = this.questionModel.options[startIndex];
-      this.questionModel.options[startIndex] = this.questionModel.options[endIndex];
-      this.questionModel.options[endIndex] = temp;
-    }
   }
 
   answerSelected(chosenAnswer: string) {
+    if (!this.isEnabled) {
+      return;
+    }
+
     this.onAnswerChanged.emit(chosenAnswer === this.questionModel.answer);
     this.questionModel.usersAnswer = chosenAnswer;
   }

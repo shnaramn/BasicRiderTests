@@ -1,4 +1,4 @@
-import { Component, ViewChild, ChangeDetectorRef } from '@angular/core';
+import { Component } from '@angular/core';
 import { QuestionBankService } from './questionBank.service';
 import { QuestionModel } from './questionModel.component';
 
