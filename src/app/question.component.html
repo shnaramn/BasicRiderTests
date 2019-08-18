@@ -12,9 +12,12 @@
       <td style="width: 400px">
         <table class="table-hover">
           <tr *ngFor='let optionAnswer of questionModel.options' (click)="answerSelected(optionAnswer)"
-            (mouseover)="highlightAnswer(optionAnswer)" (mouseleave)="clearHighlightAnswer(optionAnswer)" [ngClass]="[
-              (optionAnswer == questionModel.usersAnswer) ? 'selectedAnswer' : '', 
-              (optionAnswer == highlightedAnswer) ? 'highlight' : '']">
+            (mouseover)="highlightAnswer(optionAnswer)" (mouseleave)="clearHighlightAnswer(optionAnswer)" [ngClass]="{
+              selectedAnswer : (!shouldShowExplanation && optionAnswer == questionModel.usersAnswer), 
+              highlight : (!shouldShowExplanation && optionAnswer == highlightedAnswer),
+              correctAnswer : (optionAnswer == questionModel.usersAnswer && optionAnswer == questionModel.answer),
+              wrongAnswer : (optionAnswer == questionModel.usersAnswer && optionAnswer != questionModel.answer)
+            }">
             <div>
               <td>
                 {{optionAnswer}}
