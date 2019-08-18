@@ -5,23 +5,31 @@
   <div>
     Score so far: {{getScoreSoFar() | number: '1.2-2'}}
   </div>
-  <div>
-    Question Number: {{currentQuestionNumber}}
+
+  <div *ngIf='!showAnswers'>
+    <div class='progressDiv' style='width: 600px; align-self: centre; margin: 0 auto;'>
+      <progress value={{totalQuestionsAnswered}} max={{maxNumberOfQuestions}}></progress>
+    </div>
+
+    <div>
+      Question Number: {{currentQuestionNumber}}
+    </div>
+    <Question (onAnswerChanged)="answerChanged($event)" [questionModel]='currentQuestion'></Question>
+    <br />
+    <div style="text-align: left; width: 800px; align-self: centre; margin: 0 auto;border-top: 10px">
+      {{result}}
+    </div>
+    <br />
+    <div style="text-align: left; width: 720px; align-self: centre; margin: 0 auto;">
+      <table>
+        <tr>
+          <td> <button (click)="goToPreviousQuestion()"> Back </button> </td>
+          <td> <button [disabled]="!isCurrentQuestionAnswered()" (click)="getNextQuestion()"> Next </button> </td>
+        </tr>
+      </table>
+    </div>
   </div>
-  <Question (onAnswerChanged)="answerChanged($event)" [questionModel]='currentQuestion'></Question>
-  <br />
-  <div style="text-align: left; width: 800px; align-self: centre; margin: 0 auto;border-top: 10px">
-    {{result}}
-  </div>
-  <br />
-  <div style="text-align: left; width: 720px; align-self: centre; margin: 0 auto;">
-    <table>
-      <tr>
-        <td> <button (click)="goToPreviousQuestion()"> Back </button> </td>
-        <td> <button [disabled]="!isCurrentQuestionAnswered()" (click)="getNextQuestion()"> Next </button> </td>
-      </tr>
-    </table>
-  </div>
+
   <br />
   <div *ngIf='showAnswers'>
     <table>
