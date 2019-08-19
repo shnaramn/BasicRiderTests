@@ -9,20 +9,28 @@ import { QuestionModel } from './questionModel.component';
 })
 
 export class QuestionBoard {
-  result: string
   totalQuestionsAnswered: number = 0;
   countOfCorrectAnswers: number = 0;
-  questionBankService: QuestionBankService;
   questionsAsked: QuestionModel[];
   currentQuestionNumber: number = -1;
   currentQuestion: QuestionModel;
   showAnswers:boolean = false;
-  readonly maxNumberOfQuestions: number = 5;
-
+  readonly maxNumberOfQuestions: number = 2;
+  questionBankService: QuestionBankService;
+  
   constructor() {
-    this.result = 'Waiting for answer...';
+    this.startTest();
+  }
+
+  private startTest() {
     this.questionBankService = new QuestionBankService();
-    this.questionsAsked = new Array<QuestionModel>(5);
+    this.questionsAsked = new Array<QuestionModel>(this.maxNumberOfQuestions);
+    this.questionBankService.refresh();
+    this.totalQuestionsAnswered = 0;
+    this.countOfCorrectAnswers = 0;
+    this.currentQuestionNumber = -1;
+    this.showAnswers = false;
+
     this.getNextQuestion();
   }
 
@@ -34,11 +42,7 @@ export class QuestionBoard {
     ++this.totalQuestionsAnswered;
 
     if (isCorrectAnswer) {
-      this.result = "Correct!";
       ++this.countOfCorrectAnswers;
-    }
-    else {
-      this.result = "Wrong!!";
     }
   }
 
@@ -70,5 +74,9 @@ export class QuestionBoard {
     }
 
     this.currentQuestion = this.questionsAsked[--this.currentQuestionNumber];
+  }
+
+  restart() {
+    this.startTest();
   }
 }

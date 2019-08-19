@@ -52,4 +52,11 @@ export class QuestionBankService {
     const correctedQuestionId = questionId % this.totalNumberOfQuestions;
     return this.questions[correctedQuestionId];
   }
+
+  refresh() {
+    // TODO: Randomize?
+    this.questions.forEach(question => {
+      question.usersAnswer = '';
+    });
+  }
 }
