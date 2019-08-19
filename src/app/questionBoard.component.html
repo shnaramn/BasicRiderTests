@@ -1,24 +1,14 @@
 <div style="text-align: left; width: 800px; align-self: centre; margin: 0 auto;">
-  <div>
-    Correct Answers: {{countOfCorrectAnswers}} / {{totalQuestionsAnswered}}
-  </div>
-  <div>
-    Score so far: {{getScoreSoFar() | number: '1.2-2'}}
-  </div>
-
   <div *ngIf='!showAnswers'>
     <div class='progressDiv' style='width: 600px; align-self: centre; margin: 0 auto;'>
       <progress value={{totalQuestionsAnswered}} max={{maxNumberOfQuestions}}></progress>
     </div>
 
     <div>
-      Question Number: {{currentQuestionNumber}}
+      Question Number: {{currentQuestionNumber + 1}}
     </div>
     <Question (onAnswerChanged)="answerChanged($event)" [questionModel]='currentQuestion'></Question>
     <br />
-    <div style="text-align: left; width: 800px; align-self: centre; margin: 0 auto;border-top: 10px">
-      {{result}}
-    </div>
     <br />
     <div style="text-align: left; width: 720px; align-self: centre; margin: 0 auto;">
       <table>
@@ -32,6 +22,14 @@
 
   <br />
   <div *ngIf='showAnswers'>
+    <button (click)="restart()">Retry</button>
+    <br />
+    <div>
+      Correct Answers: {{countOfCorrectAnswers}} / {{totalQuestionsAnswered}}
+    </div>
+    <div>
+      Score: {{getScoreSoFar() | number: '1.2-2'}}
+    </div>
     <table>
       <tr *ngFor='let currentQuestion of questionsAsked'>
         <td>
