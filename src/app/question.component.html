@@ -15,8 +15,9 @@
             (mouseover)="highlightAnswer(optionAnswer)" (mouseleave)="clearHighlightAnswer(optionAnswer)" [ngClass]="{
               selectedAnswer : (!shouldShowExplanation && optionAnswer == questionModel.usersAnswer), 
               highlight : (!shouldShowExplanation && optionAnswer == highlightedAnswer),
-              correctAnswer : (optionAnswer == questionModel.usersAnswer && optionAnswer == questionModel.answer),
-              wrongAnswer : (optionAnswer == questionModel.usersAnswer && optionAnswer != questionModel.answer)
+              correctAnswer : (shouldShowExplanation && optionAnswer == questionModel.usersAnswer && optionAnswer == questionModel.answer),
+              actualAnswer : (shouldShowExplanation && optionAnswer == questionModel.answer && optionAnswer != questionModel.usersAnswer),
+              wrongAnswer : (shouldShowExplanation && optionAnswer == questionModel.usersAnswer && optionAnswer != questionModel.answer)
             }">
             <div>
               <td>

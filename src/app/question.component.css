@@ -9,6 +9,11 @@ table tr.correctAnswer {
   color: #ffffff;
 }
 
+table tr.actualAnswer {
+  background-color: rgb(172, 230, 174) !important;
+  color: black;
+}
+
 table tr.wrongAnswer {
   background-color: rgb(219, 86, 33) !important;
   color: #ffffff;
