@@ -29,3 +29,8 @@
   height: 40px;
   font-size: large;
 }
+
+.importantWarning {
+  font-weight: bold;
+  color: red
+}
