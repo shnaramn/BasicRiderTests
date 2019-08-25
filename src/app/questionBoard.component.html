@@ -34,11 +34,18 @@
       Score: {{getScore() | number: '1.2-2'}} %
     </div>
     <table>
+      <tr>
+        <td>
+          <hr>
+        </td>
+      </tr>
       <tr *ngFor='let currentQuestion of questionsAsked'>
         <td>
-          <div>
+          <div style="margin-top: 8px">
             <Question [questionModel]='currentQuestion' [shouldShowExplanation]=true [isEnabled]=false></Question>
           </div>
+          <br />
+          <hr>
         </td>
       </tr>
     </table>

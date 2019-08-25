@@ -13,7 +13,7 @@
     <tr>
       <td style="width: 400px">
         <table class="table-hover">
-          <tr *ngFor='let optionAnswer of questionModel.options' (click)="answerSelected(optionAnswer)"
+          <tr *ngFor='let optionAnswer of questionModel.options; let i = index' (click)="answerSelected(optionAnswer)"
             (mouseover)="highlightAnswer(optionAnswer)" (mouseleave)="clearHighlightAnswer(optionAnswer)" [ngClass]="{
               selectedAnswer : (!shouldShowExplanation && optionAnswer == questionModel.usersAnswer), 
               highlight : (!shouldShowExplanation && optionAnswer == highlightedAnswer),
@@ -22,6 +22,7 @@
               wrongAnswer : (shouldShowExplanation && optionAnswer == questionModel.usersAnswer && optionAnswer != questionModel.answer)
             }">
             <div>
+              <td>{{i + 1}}. &nbsp;</td>
               <td>
                 {{optionAnswer}}
               </td>
