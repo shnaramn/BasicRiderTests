@@ -9,15 +9,15 @@ import { QuestionModel } from './questionModel.component';
 })
 
 export class QuestionBoard {
-  totalQuestionsAnswered: number = 0;
   countOfCorrectAnswers: number = 0;
   questionsAsked: QuestionModel[];
   currentQuestionNumber: number = -1;
   currentQuestion: QuestionModel;
-  showAnswers:boolean = false;
+  showAnswers: boolean = false;
   readonly maxNumberOfQuestions: number = 2;
   questionBankService: QuestionBankService;
-  
+  secondButtonText: string = 'Next';
+
   constructor() {
     this.startTest();
   }
@@ -26,7 +26,6 @@ export class QuestionBoard {
     this.questionBankService = new QuestionBankService();
     this.questionsAsked = new Array<QuestionModel>(this.maxNumberOfQuestions);
     this.questionBankService.refresh();
-    this.totalQuestionsAnswered = 0;
     this.countOfCorrectAnswers = 0;
     this.currentQuestionNumber = -1;
     this.showAnswers = false;
@@ -38,25 +37,29 @@ export class QuestionBoard {
     return this.questionsAsked[this.currentQuestionNumber].usersAnswer != ''
   }
 
-  answerChanged(isCorrectAnswer: boolean) {
-    ++this.totalQuestionsAnswered;
-
-    if (isCorrectAnswer) {
-      ++this.countOfCorrectAnswers;
-    }
-  }
-
-  getScoreSoFar(): number {
-    if (this.totalQuestionsAnswered == 0) {
+  getScore(): number {
+    if (this.maxNumberOfQuestions == 0) {
       return 0;
     }
 
-    return (this.countOfCorrectAnswers / this.totalQuestionsAnswered) * 100;
+    return (this.countOfCorrectAnswers / this.maxNumberOfQuestions) * 100;
+  }
+
+  private calculateFinalScore() {
+    this.countOfCorrectAnswers = 0;
+
+    this.questionsAsked.forEach(currentQuestion => {
+      if (currentQuestion.answer == currentQuestion.usersAnswer) {
+        ++this.countOfCorrectAnswers;
+      }
+    });
+
+    this.showAnswers = true;
   }
 
   getNextQuestion() {
     if (this.currentQuestionNumber >= (this.maxNumberOfQuestions - 1)) {
-      this.showAnswers = true;
+      this.calculateFinalScore();
       return;
     }
 
@@ -66,6 +69,7 @@ export class QuestionBoard {
     }
 
     this.currentQuestion = this.questionsAsked[++this.currentQuestionNumber];
+    this.secondButtonText = (this.currentQuestionNumber == this.maxNumberOfQuestions-1) ? 'Calculate Score' : 'Next';
   }
 
   goToPreviousQuestion() {

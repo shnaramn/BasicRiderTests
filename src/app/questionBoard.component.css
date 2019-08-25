@@ -1,3 +1,23 @@
+.questionBoardMainDiv {
+  text-align: left;
+  width: 800px;
+  align-self: centre;
+  margin: 0 auto;
+}
+
+.progressDiv {
+  width: 600px;
+  align-self: centre;
+  margin: 0 auto;
+}
+
+.buttonsDiv {
+  text-align: left;
+  width: 720px;
+  align-self: centre; 
+  margin: 0 auto;
+}
+
 progress {
   width: 600px;
 }
