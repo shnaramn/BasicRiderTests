@@ -14,7 +14,8 @@
       <table>
         <tr>
           <td> <button (click)="goToPreviousQuestion()"> Back </button> </td>
-          <td> <button [disabled]="!isCurrentQuestionAnswered()" (click)="getNextQuestion()"> {{secondButtonText}} </button> </td>
+          <td> <button [disabled]="!isCurrentQuestionAnswered()" (click)="getNextQuestion()"> {{secondButtonText}}
+            </button> </td>
         </tr>
       </table>
     </div>
@@ -22,7 +23,9 @@
 
   <br />
   <div *ngIf='showAnswers'>
-    <button (click)="restart()">Retry</button>
+    <div class='retryButtonDiv'>
+      <button (click)="restart()">Retry</button>
+    </div>
     <br />
     <div>
       Correct Answers: {{countOfCorrectAnswers}} / {{maxNumberOfQuestions}}

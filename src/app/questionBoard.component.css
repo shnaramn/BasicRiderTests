@@ -21,3 +21,16 @@
 progress {
   width: 600px;
 }
+
+.retryButtonDiv {
+  width: 600px;
+  align-self: center;
+  margin: 0 auto;
+  text-align: center;
+}
+
+button {
+  height: 40px;
+  font-size: 16px;
+  width: 140px;
+}
