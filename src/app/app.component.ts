@@ -10,7 +10,7 @@ export class AppComponent {
   termsAgreed = false;
 
   clickEvent() {
-    this.title = 'Motorcycle Endorsement Practice Test';
+    this.title = 'Basic Rider Knowledge Practice Test';
     this.termsAgreed = true;
   }
 }
