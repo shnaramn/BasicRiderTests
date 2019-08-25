@@ -9,17 +9,23 @@
       "See, Lean, Push, Race"
     ],
     "explanation": "You have to slow down, look at the corner, press the side of the handle bar, and gently roll the accelerator.",
+    "image": null,
     "usersAnswer": ""
   },
   {
     "id": 2,
-    "question": "What is your favorite bike?",
+    "question": "In the following image, identify the highlighted item?",
     "answer": "Kawasaki",
     "options": [
       "Kawasaki",
       "Yamaha",
       "Honda"
     ],
+    "image": {
+      "url": "/assets/images/handleBar.jpg",
+      "height": 314,
+      "width": 600
+    },
     "explanation": "My first bike was a Kawasaki.",
     "usersAnswer": ""
   }
@@ -33,6 +39,7 @@
       "Dont ride a bike.",
       "Buy insurance."
     ],
+    "image": null,
     "explanation": "Give yourself enough time and space to see any dangers that might arise ahead.",
     "usersAnswer": ""
   },
@@ -45,6 +52,7 @@
       "Dont know",
       "Ice cream"
     ],
+    "image": null,
     "explanation": "The zone when gently releasing the clutch will tug the bike.",
     "usersAnswer": ""
   },
@@ -57,6 +65,7 @@
       "A movie",
       "Ice cream"
     ],
+    "image": null,
     "explanation": "Possible routes where you can escape.",
     "usersAnswer": ""
   }
