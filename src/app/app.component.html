@@ -32,9 +32,24 @@
       <li> For further information, go to <a href="https://msf-usa.org/">Motorcycle Safety Foundation</a>.</li>
     </div>
 
-    <div class='termsAgreedButtonDiv'>
-      <button class='termsAgreedButton' (click)='clickEvent()'>Start the test!</button>
-    </div>
+    <table class='agreementTable'>
+      <tr>
+        <td>
+          <div class='termsAgreedStatementDiv'>
+            <input type="checkbox" (click)="checked()">
+            I've read and accept the above mentioned terms of agreement.
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class='termsAgreedButtonDiv'>
+            <button class='termsAgreedButton' (click)='startTestButtonClicked()' [(disabled)]='!termsReadAndAgreed'>Start the test!</button>
+          </div>
+        </td>
+      </tr>
+    </table>
+
   </div>
 
   <div *ngIf='termsAgreed'>

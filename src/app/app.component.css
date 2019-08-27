@@ -16,12 +16,23 @@
 .instructionsDiv {
   text-align: left;
   width: 800px;
-  align-self: centre;
+  align-self: center;
+  margin: 0 auto;
+}
+
+.termsAgreedStatementDiv {
+  margin-top: 20px;
+}
+
+.agreementTable {
+  width: 600px;
+  text-align: center;
+  align-self: center;
   margin: 0 auto;
 }
 
 .termsAgreedButtonDiv {
-  margin-top: 20px;
+  margin-top: 8px;
   margin-bottom: 20px;
 }
 
