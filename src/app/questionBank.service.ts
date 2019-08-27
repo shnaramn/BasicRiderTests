@@ -13,7 +13,7 @@ export class QuestionBankService {
   constructor() {
     this.questions = questionsRaw;
     this.totalNumberOfQuestions = this.questions.length;
-    
+
     this.questions.forEach(question => {
       this.randomizeAnswers(question);
     });
@@ -40,8 +40,10 @@ export class QuestionBankService {
   getNextQuestion(excludeMask: number[]): QuestionModel {
     let nextQuestionId = Helper.getRandomIntFromInterval(1, this.totalNumberOfQuestions);
 
-    while (excludeMask.includes(nextQuestionId)) {
-      nextQuestionId = Helper.getRandomIntFromInterval(1, this.totalNumberOfQuestions);
+    if (excludeMask != null) {
+      while (excludeMask.includes(nextQuestionId)) {
+        nextQuestionId = Helper.getRandomIntFromInterval(1, this.totalNumberOfQuestions);
+      }
     }
 
     return this.getQuestionById(nextQuestionId);

@@ -11,6 +11,7 @@ import { QuestionModel } from './questionModel.component';
 export class QuestionBoard {
   countOfCorrectAnswers: number = 0;
   questionsAsked: QuestionModel[];
+  idsOfQuestionsAsked: number[] = null;
   currentQuestionNumber: number = -1;
   currentQuestion: QuestionModel;
   showAnswers: boolean = false;
@@ -25,6 +26,7 @@ export class QuestionBoard {
   private startTest() {
     this.questionBankService = new QuestionBankService();
     this.questionsAsked = new Array<QuestionModel>(this.maxNumberOfQuestions);
+    this.idsOfQuestionsAsked = new Array<number>();
     this.questionBankService.refresh();
     this.countOfCorrectAnswers = 0;
     this.currentQuestionNumber = -1;
@@ -64,7 +66,8 @@ export class QuestionBoard {
     }
 
     if (this.questionsAsked[this.currentQuestionNumber + 1] == null) {
-      const newQuestionModel = this.questionBankService.getQuestionById(this.currentQuestionNumber + 1);
+      const newQuestionModel = this.questionBankService.getNextQuestion(this.idsOfQuestionsAsked);
+      this.idsOfQuestionsAsked.push(newQuestionModel.id);
       this.questionsAsked[this.currentQuestionNumber + 1] = newQuestionModel;
     }
 
