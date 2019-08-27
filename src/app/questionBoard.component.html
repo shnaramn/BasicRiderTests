@@ -11,7 +11,7 @@
     <br />
     <br />
     <div class='buttonsDiv'>
-      <table>
+      <table class='buttonsTable'>
         <tr>
           <td> <button (click)="goToPreviousQuestion()"> Back </button> </td>
           <td> <button [disabled]="!isCurrentQuestionAnswered()" (click)="getNextQuestion()"> {{secondButtonText}}

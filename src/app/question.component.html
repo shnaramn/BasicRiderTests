@@ -5,7 +5,8 @@
         <div class='questionClass'>
           {{questionModel.question}}
           <br />
-          <img *ngIf='questionModel.image' src={{questionModel.image.url}} height={{questionModel.image.height}} width={{questionModel.image.width}}/>
+          <img *ngIf='questionModel.image' src={{questionModel.image.url}} height={{questionModel.image.height}}
+            width={{questionModel.image.width}} />
         </div>
       </td>
     </tr>
@@ -32,7 +33,8 @@
       </td>
 
       <td style="width: 400px">
-        <div class='explanationClass' *ngIf='shouldShowExplanation'>
+        <div *ngIf='shouldShowExplanation'>
+          <div class='explanationTitleClass'>Explanation:</div>
           {{questionModel.explanation}}
         </div>
       </td>

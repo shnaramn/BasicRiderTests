@@ -12,9 +12,14 @@
 }
 
 .buttonsDiv {
-  text-align: left;
   width: 720px;
-  align-self: centre; 
+  align-self: center; 
+  margin: 0 auto;
+  text-align: center;
+}
+
+.buttonsTable {
+  align-self: center; 
   margin: 0 auto;
 }
 

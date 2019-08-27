@@ -4,6 +4,12 @@
   font-size: larger
 }
 
+.explanationTitleClass {
+  font-weight: bold;
+  color: black;
+  font-size: medium
+}
+
 table tr.correctAnswer {
   background-color: #4CAF50 !important;
   color: #ffffff;
