@@ -4,7 +4,6 @@
     "question": "What are escape routes?",
     "answer": "Routes for escaping",
     "options": [
-      "Routes for escaping",
       "A movie",
       "Ice cream",
       "Routes"
@@ -18,7 +17,6 @@
     "question": "What does SLPR stand for?",
     "answer": "Slow, Look, Press, Roll",
     "options": [
-      "Slow, Look, Press, Roll",
       "Slow, Lean, Power, Ride",
       "See, Lean, Push, Race",
       "Slide, Load, Power, Rock"
@@ -32,7 +30,6 @@
     "question": "In the following image, what is the highlighted item?",
     "answer": "Kawasaki",
     "options": [
-      "Kawasaki",
       "Yamaha",
       "Honda",
       "Ducati"
@@ -51,7 +48,6 @@
     "question": "What is your most important role in reducing risk?",
     "answer": "Time + Space + SEE",
     "options": [
-      "Time + Space + SEE",
       "Dont ride a bike.",
       "Buy insurance.",
       "Wushu"
@@ -65,13 +61,25 @@
     "question": "What is the friction zone?",
     "answer": "Some zone",
     "options": [
-      "Some zone",
       "Dont know",
       "Ice cream",
       "After"
     ],
     "image": null,
     "explanation": "The zone when gently releasing the clutch will tug the bike.",
+    "usersAnswer": ""
+  },
+  {
+    "id": 5,
+    "question": "Why should you squeeze the clutch lever fully when starting the motorcycle?",
+    "answer": "For safety, in case the motorcycle is not in neutral gear",
+    "options": [
+      "One should not hold the clutch when starting the motorcycle.",
+      "The engine won't start without holding the clutch.",
+      "To let additional fuel flow to the engine."
+    ],
+    "image": null,
+    "explanation": "The motor cycle could be in gear by chance. Holding the clutch when starting would ensure safety.",
     "usersAnswer": ""
   }
 ]

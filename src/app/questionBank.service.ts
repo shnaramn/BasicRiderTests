@@ -15,7 +15,8 @@ export class QuestionBankService {
     this.totalNumberOfQuestions = this.questions.length;
 
     this.questions.forEach(question => {
-      this.randomizeAnswers(question);
+      // Add the right answer to options.
+      question.options.push(question.answer);
     });
   }
 
@@ -58,8 +59,8 @@ export class QuestionBankService {
   }
 
   refresh() {
-    // TODO: Randomize?
     this.questions.forEach(question => {
+      this.randomizeAnswers(question);
       question.usersAnswer = '';
     });
   }

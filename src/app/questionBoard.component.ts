@@ -20,11 +20,11 @@ export class QuestionBoard {
   secondButtonText: string = 'Next';
 
   constructor() {
+    this.questionBankService = new QuestionBankService();
     this.startTest();
   }
 
   private startTest() {
-    this.questionBankService = new QuestionBankService();
     this.questionsAsked = new Array<QuestionModel>(this.maxNumberOfQuestions);
     this.idsOfQuestionsAsked = new Array<number>();
     this.questionBankService.refresh();
