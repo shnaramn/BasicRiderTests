@@ -27,11 +27,17 @@
       <button (click)="restart()">Retry</button>
     </div>
     <br />
-    <div>
+    <div class="correctAnswersDiv">
       Correct Answers: {{countOfCorrectAnswers}} / {{maxNumberOfQuestions}}
     </div>
-    <div>
-      Score: {{getScore() | number: '1.2-2'}} %
+    <div class="scoreDiv">
+      Score:
+      <span [ngClass]="{
+        redColor : (getScore() < 75),
+        greenColor : (getScore() >= 75)
+      }">
+        {{getScore() | number: '1.2-2'}} %
+      </span>
     </div>
     <table>
       <tr>

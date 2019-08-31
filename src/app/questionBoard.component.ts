@@ -66,7 +66,7 @@ export class QuestionBoard {
     }
 
     if (this.questionsAsked[this.currentQuestionNumber + 1] == null) {
-      const newQuestionModel = this.questionBankService.getNextQuestion(this.idsOfQuestionsAsked);
+      const newQuestionModel = this.questionBankService.getNextQuestionExcludingMasks(this.idsOfQuestionsAsked);
       this.idsOfQuestionsAsked.push(newQuestionModel.id);
       this.questionsAsked[this.currentQuestionNumber + 1] = newQuestionModel;
     }

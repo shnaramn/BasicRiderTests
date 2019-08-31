@@ -37,22 +37,24 @@ export class QuestionBankService {
     }
   }
 
-  getNextQuestion(excludeMask: number[]): QuestionModel {
-    let nextQuestionId = Helper.getRandomIntFromInterval(1, this.totalNumberOfQuestions);
+  getNextQuestionExcludingMasks(excludeMask: number[]): QuestionModel {
+    const lowerBound = 0;
+    const upperBound = this.totalNumberOfQuestions - 1;
+
+    let nextQuestionId = Helper.getRandomIntFromInterval(lowerBound, upperBound);
 
     if (excludeMask != null) {
       while (excludeMask.includes(nextQuestionId)) {
-        nextQuestionId = Helper.getRandomIntFromInterval(1, this.totalNumberOfQuestions);
+        nextQuestionId = Helper.getRandomIntFromInterval(lowerBound, upperBound);
       }
     }
 
-    return this.getQuestionById(nextQuestionId);
+    return this.getQuestionAtIndex(nextQuestionId);
   }
 
-  getQuestionById(questionId: number): QuestionModel {
-    // TODO: Remove
-    const correctedQuestionId = questionId % this.totalNumberOfQuestions;
-    return this.questions[correctedQuestionId];
+  private getQuestionAtIndex(questionIndex: number): QuestionModel {
+    const correctedQuestionIndex = questionIndex % this.totalNumberOfQuestions;
+    return this.questions[correctedQuestionIndex];
   }
 
   refresh() {

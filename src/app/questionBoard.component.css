@@ -13,13 +13,13 @@
 
 .buttonsDiv {
   width: 720px;
-  align-self: center; 
+  align-self: center;
   margin: 0 auto;
   text-align: center;
 }
 
 .buttonsTable {
-  align-self: center; 
+  align-self: center;
   margin: 0 auto;
 }
 
@@ -38,4 +38,20 @@ button {
   height: 40px;
   font-size: 16px;
   width: 140px;
+}
+
+.correctAnswersDiv {
+  font-size: large
+}
+
+.scoreDiv {
+  font-size: large
+}
+
+.greenColor {
+  color: green
+}
+
+.redColor {
+  color: red
 }
