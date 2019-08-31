@@ -35,7 +35,7 @@
       "Ducati"
     ],
     "image": {
-      "url": "/assets/images/handleBar.jpg",
+      "url": "./assets/images/handleBar.jpg",
       "height": 314,
       "width": 600
     },
