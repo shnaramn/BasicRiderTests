@@ -1,5 +1,9 @@
 # MotorcycleTests
 
+I created this project primarily to learn Angular.
+
+The questions found in this project were taken from the reading material provided by [Motorcycle Safety Foundation](https://msf-usa.org)'s [Basic Rider course](https://msf-usa.org/students.aspx#brc-brc).
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.0.
 
 ## Development server
