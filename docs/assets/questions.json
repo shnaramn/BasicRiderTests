@@ -1,10 +1,22 @@
 [
   {
+    "id": 0,
+    "question": "What are escape routes?",
+    "answer": "Routes for escaping",
+    "options": [
+      "A movie",
+      "Ice cream",
+      "Routes"
+    ],
+    "image": null,
+    "explanation": "Possible routes where you can escape.",
+    "usersAnswer": ""
+  },
+  {
     "id": 1,
     "question": "What does SLPR stand for?",
     "answer": "Slow, Look, Press, Roll",
     "options": [
-      "Slow, Look, Press, Roll",
       "Slow, Lean, Power, Ride",
       "See, Lean, Push, Race",
       "Slide, Load, Power, Rock"
@@ -18,13 +30,12 @@
     "question": "In the following image, what is the highlighted item?",
     "answer": "Kawasaki",
     "options": [
-      "Kawasaki",
       "Yamaha",
       "Honda",
       "Ducati"
     ],
     "image": {
-      "url": "/assets/images/handleBar.jpg",
+      "url": "./assets/images/handleBar.jpg",
       "height": 314,
       "width": 600
     },
@@ -37,7 +48,6 @@
     "question": "What is your most important role in reducing risk?",
     "answer": "Time + Space + SEE",
     "options": [
-      "Time + Space + SEE",
       "Dont ride a bike.",
       "Buy insurance.",
       "Wushu"
@@ -51,7 +61,6 @@
     "question": "What is the friction zone?",
     "answer": "Some zone",
     "options": [
-      "Some zone",
       "Dont know",
       "Ice cream",
       "After"
@@ -62,16 +71,15 @@
   },
   {
     "id": 5,
-    "question": "What are escape routes?",
-    "answer": "Routes for escaping",
+    "question": "Why should you squeeze the clutch lever fully when starting the motorcycle?",
+    "answer": "For safety, in case the motorcycle is not in neutral gear",
     "options": [
-      "Routes for escaping",
-      "A movie",
-      "Ice cream",
-      "Routes"
+      "One should not hold the clutch when starting the motorcycle.",
+      "The engine won't start without holding the clutch.",
+      "To let additional fuel flow to the engine."
     ],
     "image": null,
-    "explanation": "Possible routes where you can escape.",
+    "explanation": "The motor cycle could be in gear by chance. Holding the clutch when starting would ensure safety.",
     "usersAnswer": ""
   }
 ]
