@@ -15,7 +15,7 @@ export class QuestionBoard {
   currentQuestionNumber: number = -1;
   currentQuestion: QuestionModel;
   showAnswers: boolean = false;
-  readonly maxNumberOfQuestions: number = 2;
+  readonly maxNumberOfQuestions: number = 25;
   questionBankService: QuestionBankService;
   secondButtonText: string = 'Next';
 
