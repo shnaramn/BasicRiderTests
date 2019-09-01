@@ -1,19 +1,6 @@
 [
   {
     "id": 0,
-    "question": "What are escape routes?",
-    "answer": "Routes for escaping",
-    "options": [
-      "A movie",
-      "Ice cream",
-      "Routes"
-    ],
-    "image": null,
-    "explanation": "Possible routes where you can escape.",
-    "usersAnswer": ""
-  },
-  {
-    "id": 1,
     "question": "What does SLPR stand for?",
     "answer": "Slow, Look, Press, Roll",
     "options": [
@@ -26,60 +13,120 @@
     "usersAnswer": ""
   },
   {
-    "id": 2,
-    "question": "In the following image, what is the highlighted item?",
-    "answer": "Kawasaki",
+    "id": 1,
+    "question": "What is the friction zone?",
+    "answer": "The area where the clutch starts to engage and transfer power to the drive train.",
     "options": [
-      "Yamaha",
-      "Honda",
-      "Ducati"
-    ],
-    "image": {
-      "url": "./assets/images/handleBar.jpg",
-      "height": 314,
-      "width": 600
-    },
-    "explanation": "My first bike was a Kawasaki.",
-    "usersAnswer": ""
-  }
-  ,
-  {
-    "id": 3,
-    "question": "What is your most important role in reducing risk?",
-    "answer": "Time + Space + SEE",
-    "options": [
-      "Dont ride a bike.",
-      "Buy insurance.",
-      "Wushu"
+      "The part of the tire that meets the road.",
+      "The area where brake pads meet the wheel.",
+      "The part of the road with most grip."
     ],
     "image": null,
-    "explanation": "Give yourself enough time and space to see any dangers that might arise ahead.",
+    "explanation": "A small area in the travel of the clutch lever that controls the connection between the engine and the rear wheel.",
+    "usersAnswer": ""
+  },
+  {
+    "id": 2,
+    "question": "What is choke control used for?",
+    "answer": "It provides an enriched fuel mixture to help start a cold engine.",
+    "options": [
+      "It allows you to shut off the engine without removing your hand from the handgrip.",
+      "Slows the vehicle by cutting off fuel to the engine.",
+      "Connects power from engine to the rear wheel."
+    ],
+    "image": null,
+    "explanation": "Located on the handlebars or near the engine. it also raises the idle to permit the engine to warm quickly. It shuold be turned off as soon as not needed.",
+    "usersAnswer": ""
+  },
+  {
+    "id": 3,
+    "question": "Which of the following is NOT TRUE about rear view mirrors?",
+    "answer": "They are flat mirrors.",
+    "options": [
+      "They are convex mirrors that are curved to provide a wider view.",
+      "They make objects appear farther than they actually are.",
+      "Reduce the size of blind spot, but they do not eliminate them."
+    ],
+    "image": null,
+    "explanation": "Remember, objects in the mirror are closer than they appear in the mirror and there will be blind spots.",
     "usersAnswer": ""
   },
   {
     "id": 4,
-    "question": "What is the friction zone?",
-    "answer": "Some zone",
+    "question": "What does squeezing the clutch lever do?",
+    "answer": "Disconnects power from the engine to the rear wheel.",
     "options": [
-      "Dont know",
-      "Ice cream",
-      "After"
+      "Supplies power from engine to the rear wheel.",
+      "Shuts off the engine.",
+      "Provides an enriched fuel mixture to help start a cold engine."
     ],
     "image": null,
-    "explanation": "The zone when gently releasing the clutch will tug the bike.",
+    "explanation": "In front of the left handgrip, it connects power from the engine to the rear wheel. The lever is squeezed in to disconnect and eased out to connect.",
     "usersAnswer": ""
   },
   {
     "id": 5,
-    "question": "Why should you squeeze the clutch lever fully when starting the motorcycle?",
-    "answer": "For safety, in case the motorcycle is not in neutral gear",
+    "question": "What does squeezing the clutch lever do?",
+    "answer": "Disconnects power from the engine to the rear wheel.",
     "options": [
-      "One should not hold the clutch when starting the motorcycle.",
-      "The engine won't start without holding the clutch.",
-      "To let additional fuel flow to the engine."
+      "Supplies power from engine to the rear wheel.",
+      "Shuts off the engine.",
+      "Provides an enriched fuel mixture to help start a cold engine."
     ],
     "image": null,
-    "explanation": "The motor cycle could be in gear by chance. Holding the clutch when starting would ensure safety.",
+    "explanation": "In front of the left handgrip, it connects power from the engine to the rear wheel. The lever is squeezed in to disconnect and eased out to connect.",
+    "usersAnswer": ""
+  },
+  {
+    "id": 6,
+    "question": "Which of the following is used to control engine speed?",
+    "answer": "Throttle.",
+    "options": [
+      "Clutch lever.",
+      "Fuel supply valve.",
+      "Choke control."
+    ],
+    "image": null,
+    "explanation": "To increase engine speed, twist in toward you (roll on). To decrease engine speed, twist it away from you (roll off).",
+    "usersAnswer": ""
+  },
+  {
+    "id": 7,
+    "question": "Which of the following indicates engine speed?",
+    "answer": "Tachometer.",
+    "options": [
+      "Odometer.",
+      "Speedometer.",
+      "Barometer."
+    ],
+    "image": null,
+    "explanation": "Indicates engine speed in revolutions per minute (rpm). It has a red line for maximum engine speed that should never be exceeded.",
+    "usersAnswer": ""
+  },
+  {
+    "id": 8,
+    "question": "Which of the following indicates road speed?",
+    "answer": "Speedometer.",
+    "options": [
+      "Odometer.",
+      "Tachometer.",
+      "Barometer."
+    ],
+    "image": null,
+    "explanation": "Indicates road speed.",
+    "usersAnswer": ""
+  },
+  {
+    "id": 9,
+    "question": "Which of the following indicates distance travelled?",
+    "answer": "Odometer.",
+    "options": [
+      "Speedometer.",
+      "Tachometer.",
+      "Barometer."
+    ],
+    "image": null,
+    "explanation": "Shows distance ridden. There may also be a re-settable trip meter, which can be used to display distance since last fill-up or the last stopping point.",
     "usersAnswer": ""
   }
 ]
