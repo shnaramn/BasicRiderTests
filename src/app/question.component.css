@@ -7,7 +7,24 @@
 .explanationTitleClass {
   font-weight: bold;
   color: black;
-  font-size: medium
+  font-size: medium;
+  margin-left: 12px
+}
+
+.explanationClass {
+  margin-left: 12px;
+}
+
+.fullQuestionView {
+  width: 100%;
+}
+
+.halfQuestionView {
+  width: 50%;
+}
+
+.emptyQuestionView {
+  width: 0%;
 }
 
 table tr.correctAnswer {

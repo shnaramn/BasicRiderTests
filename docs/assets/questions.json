@@ -8,7 +8,7 @@
       "See, Lean, Push, Race",
       "Slide, Load, Power, Rock"
     ],
-    "explanation": "You have to slow down, look at the corner, press the side of the handle bar, and gently roll the accelerator.",
+    "explanation": "These are the four action steps for making a basic turn. You have to slow down, look at the corner, press the side of the handle bar, and gently roll the accelerator.",
     "image": null,
     "usersAnswer": ""
   },
@@ -127,6 +127,461 @@
     ],
     "image": null,
     "explanation": "Shows distance ridden. There may also be a re-settable trip meter, which can be used to display distance since last fill-up or the last stopping point.",
+    "usersAnswer": ""
+  },
+  {
+    "id": 10,
+    "question": "What are the five steps of the engine pre-start routine?",
+    "answer": "Fuel, Ignition, Neutral, Engine cut-off switch, Choke/Clutch.",
+    "options": [
+      "Forward, Unlock, Geardown, Engine-On, Start.",
+      "Forward, Unlock, Gear-up, Engine-On, Start.",
+      "Fuel, Ignition, Gear-up, Engine-On, Lights."
+    ],
+    "image": null,
+    "explanation": "This is shortened as FINE-C. Hold the clutch for additional safety, in case the vehicle is in gear by accident/malfunction.",
+    "usersAnswer": ""
+  },
+  {
+    "id": 11,
+    "question": "What are the three steps for shutting off the engine?",
+    "answer": "Engine cut-off switch to off, Ignition key off, Fuel valve off.",
+    "options": [
+      "Ignition key off, Bike stand on, Lights off.",
+      "Fuel valve off, Neutral gear, Ignition key off.",
+      "Engine cut-off switch off, Neutral gear, Fuel valve off."
+    ],
+    "image": null,
+    "explanation": "This can be remembered as: Thumb (shut off engine), Key (ignition off), Valve (fuel off). Always follow this order for maximum safety.",
+    "usersAnswer": ""
+  },
+  {
+    "id": 12,
+    "question": "What is the position of the right wrist for good riding posture?",
+    "answer": "Flat wrist with fingers around the throttle.",
+    "options": [
+      "Slightly bent wrist with knuckles pointing to the sky.",
+      "Slightly bent wrist with knuckles pointing to the ground.",
+      "Bent wrist with knuckles pointing to the ground."
+    ],
+    "image": null,
+    "explanation": "Arms should be relaxed and bent. Keep your fingers around the throttle with your wrist flat.",
+    "usersAnswer": ""
+  },
+  {
+    "id": 13,
+    "question": "How do you initiate motorcycle lean at speeds HIGHER than walking speed?",
+    "answer": "Press (forward or down) the handgrip on the same side of the intended turn.",
+    "options": [
+      "Lean the motorcycle and turn the handlebars in the direction you want to go.",
+      "Always initiate turn by dropping to the next lower gear.",
+      "Squeeze the clutch fully in."
+    ],
+    "image": null,
+    "explanation": "This is called countersteering because the handlebars are initially moved opposite the direction of the turn.",
+    "usersAnswer": ""
+  },
+  {
+    "id": 14,
+    "question": "How do you initiate motorcycle lean at speeds LOWER THAN OR EQUAL TO walking speed?",
+    "answer": "Lean the motorcycle and turn the handlebars in the direction you want to go.",
+    "options": [
+      "Press (forward or down) the handgrip on the same side of the intended turn.",
+      "Always initiate turn by dropping to the next lower gear.",
+      "Squeeze the clutch fully in."
+    ],
+    "image": null,
+    "explanation": "At lower speeds, lean the motorcycle and turn the handlebars in the direction you want to go.",
+    "usersAnswer": ""
+  },
+  {
+    "id": 15,
+    "question": "What is the three-step strategy for curves?",
+    "answer": "Search, Setup, Smooth",
+    "options": [
+      "Stop, Look, Go.",
+      "Swing, Swerve, Speed.",
+      "Slow, Swing, Speed."
+    ],
+    "image": null,
+    "explanation": "Search: while approaching and in curve (for obstacles, vehicles, etc.), Setup: Adjust speed, lane position, Smooth: No jerky movements.",
+    "usersAnswer": ""
+  },
+  {
+    "id": 16,
+    "question": "In what type of turn does counterweighting help?",
+    "answer": "For slow, tight turns.",
+    "options": [
+      "For fast, wide turns.",
+      "For graveled roads.",
+      "For off roads."
+    ],
+    "image": null,
+    "explanation": "Counterweighting (leaning independently from motorcycle) permits more motorcycle lean for a sharper turning radius. Suitable for slow, tight turns.",
+    "usersAnswer": ""
+  },
+  {
+    "id": 17,
+    "question": "What gear should you be in when coming to a stop?",
+    "answer": "First gear.",
+    "options": [
+      "Neutral.",
+      "Gear at the time of braking.",
+      "Second gear."
+    ],
+    "image": null,
+    "explanation": "You should be in first gear by the time you stop. It allows us to move again quickly if required.",
+    "usersAnswer": ""
+  },
+  {
+    "id": 18,
+    "question": "How should the handlebars be positioned when coming to a stop?",
+    "answer": "Handlebars should be centered.",
+    "options": [
+      "Turn the handlebars to the right.",
+      "Turn the handlebars to the left.",
+      "Handlebars can be in any direction."
+    ],
+    "image": null,
+    "explanation": "Handlebars should be squared (center the steering) so the motorcycle is easier to hold up.",
+    "usersAnswer": ""
+  },
+  {
+    "id": 19,
+    "question": "Which of the following statements is TRUE?",
+    "answer": "Front brake has more stopping power than rear brake.",
+    "options": [
+      "Rear brake has more stopping power than front brake.",
+      "Both brakes have equal stopping power.",
+      "None of the above."
+    ],
+    "image": null,
+    "explanation": "Front brake provides 70% or more stopping power because, forward weight shift pushes the front tire down onto the road, giving it more grip than the rear tire.",
+    "usersAnswer": ""
+  },
+  {
+    "id": 20,
+    "question": "How does the motorcycle's weight shift during braking?",
+    "answer": "Weight shifts forwards.",
+    "options": [
+      "Weight shifts backwards.",
+      "There is no weight shift.",
+      "Weight shifts to the right."
+    ],
+    "image": null,
+    "explanation": "During braking weight shifts forward, pushing the front tire down onto the road, giving it more grip than the rear tire.",
+    "usersAnswer": ""
+  },
+  {
+    "id": 21,
+    "question": "How do you stop in a curve?",
+    "answer": "Apply both brakes and straighten the motorcycle.",
+    "options": [
+      "Use rear brakes only.",
+      "Use front brakes only.",
+      "Use engine braking for stopping in curves."
+    ],
+    "image": null,
+    "explanation": "When braking to stop in a curve, gradually apply both brakes as you straighten the motorcycle.",
+    "usersAnswer": ""
+  },
+  {
+    "id": 22,
+    "question": "Why do you change gears?",
+    "answer": "To match engine speed (RPM) to road speed.",
+    "options": [
+      "To save fuel.",
+      "To gain traction.",
+      "To stop the motorcycle from tipping over."
+    ],
+    "image": null,
+    "explanation": "Lower gears are used for lower speeds, and higher gears are used for higher speeds.",
+    "usersAnswer": ""
+  },
+  {
+    "id": 23,
+    "question": "What is engine braking?",
+    "answer": "Slowing down by shifting to a lower gear and easing out the clutch lever.",
+    "options": [
+      "Shutting down the engine using engine cut-ff switch.",
+      "Slowing down by using clutch and rear brake.",
+      "Slowing down by using clutch and front brake."
+    ],
+    "image": null,
+    "explanation": "To use engine braking, shift down one gear at a time and ease out the clutch lever through the friction zone.",
+    "usersAnswer": ""
+  },
+  {
+    "id": 24,
+    "question": "What is the position of the clutch lever when making a stop?",
+    "answer": "Fully squeezed.",
+    "options": [
+      "Any position.",
+      "Squeezed halfway through.",
+      "Fully open."
+    ],
+    "image": null,
+    "explanation": "When making a complete stop, the clutch lever must be fully squeezed to disconnect power to the rear wheel.",
+    "usersAnswer": ""
+  },
+  {
+    "id": 25,
+    "question": "What does each letter in T-CLOCS stand for?",
+    "answer": "Tires and Wheels, Controls, Lights and Mirrors, Oil, Chasis, Stands.",
+    "options": [
+      "Tires, Clutch, Level, Outdoor conditions, Chase, Swerve.",
+      "Try Close Leaning Or Close Swerving.",
+      "Temperature, Coolant, Liquid, Oil, Clutch, Stands."
+    ],
+    "image": null,
+    "explanation": "T-CLOCS is a pre-ride inspection routine to ensure safety.",
+    "usersAnswer": ""
+  },
+  {
+    "id": 26,
+    "question": "What type of injury accounts for the majority of motorcycle-related deaths?",
+    "answer": "Head injury.",
+    "options": [
+      "Shoulder injury.",
+      "Chest injury.",
+      "Injuries to arms and legs."
+    ],
+    "image": null,
+    "explanation": "A head injury is the primary cause of deatch for riders.",
+    "usersAnswer": ""
+  },
+  {
+    "id": 27,
+    "question": "What is hypothermia?",
+    "answer": "Lower than normal body temperature.",
+    "options": [
+      "Higher than normal body temperature.",
+      "Normal body temperature.",
+      "Cyclical rise and drop in body temperature."
+    ],
+    "image": null,
+    "explanation": "Hypothermia is lower than normal body temperature and causes loss of concentration and slower reactions.",
+    "usersAnswer": ""
+  },
+  {
+    "id": 28,
+    "question": "Where do most crashes occur?",
+    "answer": "Curves and intersections.",
+    "options": [
+      "Straight highways.",
+      "When entering road from driveways.",
+      "Parking lots."
+    ],
+    "image": null,
+    "explanation": "Crashes mostly occur in curves and intersections because, the vehicle is less stable, you are more vulnerable and less visible.",
+    "usersAnswer": ""
+  },
+  {
+    "id": 29,
+    "question": "Which of the following is not a safety margin?",
+    "answer": "Having multiple lanes to ride in.",
+    "options": [
+      "Having riding skill and motorcycle maneuverability beyond what is actually needed.",
+      "Having traction beyond what is actually needed.",
+      "Having time and space beyond what is actually needed."
+    ],
+    "image": null,
+    "explanation": "Rider skill, traction and time and space provide safety margins reducing risk.",
+    "usersAnswer": ""
+  },
+  {
+    "id": 30,
+    "question": "Which of the following is not a safety margin?",
+    "answer": "Having multiple lanes to ride in.",
+    "options": [
+      "Having riding skill and motorcycle maneuverability beyond what is actually needed.",
+      "Having traction beyond what is actually needed.",
+      "Having time and space beyond what is actually needed."
+    ],
+    "image": null,
+    "explanation": "Rider skill, traction and time and space provide safety margins reducing risk.",
+    "usersAnswer": ""
+  },
+  {
+    "id": 31,
+    "question": "Which of the following is NOT a visual lead time of RiderRadar?",
+    "answer": "7-second braking time and distance.",
+    "options": [
+      "2-second following time and distance.",
+      "4-second urgent time and distance.",
+      "12-secoond anticipation time and distance."
+    ],
+    "image": null,
+    "explanation": "These times help under what is doiong on all around. Consider using greater times and distance.",
+    "usersAnswer": ""
+  },
+  {
+    "id": 32,
+    "question": "Which of the following is NOT a part of stopping distance?",
+    "answer": "Warming distance.",
+    "options": [
+      "Perception distance.",
+      "Reaction distance.",
+      "Braking distance."
+    ],
+    "image": null,
+    "explanation": "Combined, these three are the total stopping distance.",
+    "usersAnswer": ""
+  },
+  {
+    "id": 33,
+    "question": "Which of the following is NOT a part of stopping distance?",
+    "answer": "Warming distance.",
+    "options": [
+      "Perception distance.",
+      "Reaction distance.",
+      "Braking distance."
+    ],
+    "image": null,
+    "explanation": "Combined, these three are the total stopping distance.",
+    "usersAnswer": ""
+  },
+  {
+    "id": 34,
+    "question": "Which of the following is NOT a part of stopping distance?",
+    "answer": "Warming distance.",
+    "options": [
+      "Perception distance.",
+      "Reaction distance.",
+      "Braking distance."
+    ],
+    "image": null,
+    "explanation": "Combined, these three are the total stopping distance.",
+    "usersAnswer": ""
+  },
+  {
+    "id": 35,
+    "question": "In the context of blind spots, what is No-Zone?",
+    "answer": "Blind spots around large trucks.",
+    "options": [
+      "Blind spots around stationary objects.",
+      "Highways at night.",
+      "Gravel roads."
+    ],
+    "image": null,
+    "explanation": "The No-Zone refers to blind spots around large trucks. These spots are on the sides, in the rear, and in the front.",
+    "usersAnswer": ""
+  },
+  {
+    "id": 36,
+    "question": "In the context of blind spots, what is No-Zone?",
+    "answer": "Blind spots around large trucks.",
+    "options": [
+      "Blind spots around stationary objects.",
+      "Highways at night.",
+      "Gravel roads."
+    ],
+    "image": null,
+    "explanation": "The No-Zone refers to blind spots around large trucks. These spots are on the sides, in the rear, and in the front.",
+    "usersAnswer": ""
+  },
+  {
+    "id": 37,
+    "question": "What should you NOT do when changing lanes?",
+    "answer": "Rush into the open spot by increasing the speed sharply.",
+    "options": [
+      "Check to see the space you want remains open.",
+      "Use a head check to see what is not seen in your mirrors.",
+      "Signal in advance and encourage driver behind to give you space."
+    ],
+    "image": null,
+    "explanation": "Never rush into any empty spot. Safety must not be compromised for speed.",
+    "usersAnswer": ""
+  },
+  {
+    "id": 38,
+    "question": "What should you NOT do when there is a tailgater?",
+    "answer": "Brake check the tailgater.",
+    "options": [
+      "Use one of the brake controls to flash the brake light.",
+      "Change lanes.",
+      "Increase your distance from vehicles ahead of you so you have more time and space to stop."
+    ],
+    "image": null,
+    "explanation": "Brake checking the tailgater is unsafe and should never be attempted.",
+    "usersAnswer": ""
+  },
+  {
+    "id": 39,
+    "question": "When riding in groups, what formation should be used on straights?",
+    "answer": "Staggered.",
+    "options": [
+      "Single-file.",
+      "Side by Side.",
+      "Any formation."
+    ],
+    "image": null,
+    "explanation": "Use a staggered formation unless there is a need for other formations.",
+    "usersAnswer": ""
+  },
+  {
+    "id": 40,
+    "question": "When riding in groups, what formation should be used in curves?",
+    "answer": "Single-file with 2-second following distance.",
+    "options": [
+      "Staggered.",
+      "Side by Side.",
+      "Any formation."
+    ],
+    "image": null,
+    "explanation": "Single-file formation with 2-second following distance gives more maneuvering room and increases safety.",
+    "usersAnswer": ""
+  },
+  {
+    "id": 41,
+    "question": "What is the best way to achieve the shortest braking distance in straight line?",
+    "answer": "Squeeze the clutch lever and apply both brakes at the same time.",
+    "options": [
+      "Apply the rear brake firmly.",
+      "Apply the front brake firmly.",
+      "Apply the rear brake first and then the front brake."
+    ],
+    "image": null,
+    "explanation": "This way of use of controls produces maximum braking without skidding either wheel.",
+    "usersAnswer": ""
+  },
+  {
+    "id": 42,
+    "question": "What is threshold braking?",
+    "answer": "The ability to use the brakes fully without producing a skid.",
+    "options": [
+      "Firmly applying the brakes at the shortest time.",
+      "Gently tapping the brakes multiple times.",
+      "Applying partial brakes without using clutch."
+    ],
+    "image": null,
+    "explanation": "This kind of braking takes a special feel. It is important to squeeze, not grab, the front brake lever and press, not jab, the rear brake pedal.",
+    "usersAnswer": ""
+  },
+  {
+    "id": 43,
+    "question": "What should you do if the rear tire skids because of too much brake pressure?",
+    "answer": "Continue to apply brake if the back moves sideway, else release the brake pedal and reapply as needed.",
+    "options": [
+      "Continue to apply brake.",
+      "Gently tap the brake levers multiple times.",
+      "Apply partial brakes without using clutch."
+    ],
+    "image": null,
+    "explanation": "Do not release the rear brake pedal when the rear wheel is not in line with the front wheel. If the rear wheel starts to roll, it might straighten quickly and throw you off.",
+    "usersAnswer": ""
+  },
+  {
+    "id": 44,
+    "question": "What should you do if the rear tire skids because of too much brake pressure?",
+    "answer": "Continue to apply brake if the back moves sideway, else release the brake pedal and reapply as needed.",
+    "options": [
+      "Continue to apply brake.",
+      "Gently tap the brake levers multiple times.",
+      "Apply partial brakes without using clutch."
+    ],
+    "image": null,
+    "explanation": "Do not release the rear brake pedal when the rear wheel is not in line with the front wheel. If the rear wheel starts to roll, it might straighten quickly and throw you off.",
     "usersAnswer": ""
   }
 ]

@@ -12,11 +12,14 @@
     </tr>
 
     <tr>
-      <td style="width: 400px">
+      <td [ngClass]="{
+        fullQuestionView : !shouldShowExplanation,
+        halfQuestionsView : shouldShowExplanation
+      }">
         <table class="table-hover">
           <tr *ngFor='let optionAnswer of questionModel.options; let i = index' (click)="answerSelected(optionAnswer)"
             (mouseover)="highlightAnswer(optionAnswer)" (mouseleave)="clearHighlightAnswer(optionAnswer)" [ngClass]="{
-              selectedAnswer : (!shouldShowExplanation && optionAnswer == questionModel.usersAnswer), 
+              selectedAnswer : (!shouldShowExplanation && optionAnswer == questionModel.usersAnswer),
               highlight : (!shouldShowExplanation && optionAnswer == highlightedAnswer),
               correctAnswer : (shouldShowExplanation && optionAnswer == questionModel.usersAnswer && optionAnswer == questionModel.answer),
               actualAnswer : (shouldShowExplanation && optionAnswer == questionModel.answer && optionAnswer != questionModel.usersAnswer),
@@ -32,10 +35,15 @@
         </table>
       </td>
 
-      <td style="width: 400px">
+      <td [ngClass]="{
+        halfQuestionView : shouldShowExplanation,
+        emptyQuestionView : !shouldShowExplanation
+      }">
         <div *ngIf='shouldShowExplanation'>
           <div class='explanationTitleClass'>Explanation:</div>
-          {{questionModel.explanation}}
+          <div class='explanationClass'>
+            {{questionModel.explanation}}
+          </div>
         </div>
       </td>
     </tr>
